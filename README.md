@@ -8,6 +8,11 @@ RUN npm run build --prod
 FROM nginx:alpine
 COPY --from=node /app/dist/hotel-apps /usr/share/nginx/html
 
+# Source
+-- https://javascript.plainenglish.io/how-to-dockerize-angular-application-3cd67e963832
 # How to run
 -- docker build -t hotel-apps .
 -- docker run -d -it -p 80:80/tcp --name hotel-apps hotel-apps:latest
+OR
+-- docker run -d -p 8080:80 --name hotel-apps hotel-apps:latest
+docker run -d -p 4200:80 --name hotel-apps hotel-apps:latest
