@@ -15,4 +15,4 @@ COPY --from=node /app/dist/hotel-apps /usr/share/nginx/html
 -- docker run -d -it -p 80:80/tcp --name hotel-apps hotel-apps:latest
 OR
 -- docker run -d -p 8080:80 --name hotel-apps hotel-apps:latest
-docker run -d -p 4200:80 --name hotel-apps hotel-apps:latest
+-- docker run -d -p 4200:80 --name hotel-apps hotel-apps:latest
